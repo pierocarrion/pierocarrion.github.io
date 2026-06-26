@@ -19,7 +19,7 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.svg" />
           <meta
             name="google-site-verification"
-            content="LoTz9Ohv5iFic5iGWVbuRC7_A1eYcbMu8xFs-ZsKVps"
+            content="fMUppWkko8MRwoXOzdLcX49dT2Wib9MN8EFXnTqbHyk"
           />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
