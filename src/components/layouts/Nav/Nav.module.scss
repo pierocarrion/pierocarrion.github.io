@@ -6,46 +6,61 @@
 
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
 .nav {
-  padding: 3rem 1.6rem;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.25rem 1.6rem;
   animation: nav-in ease 0.7s;
+  background: linear-gradient(to bottom, rgba(10, 10, 15, 0.6), transparent);
+  backdrop-filter: blur(6px);
+}
+
+.brand {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  letter-spacing: -0.02em;
+  color: var(--color-title);
+  text-decoration: none;
 }
 
 .list {
   margin: 0;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 0;
   list-style: none;
-}
-
-.item {
-  &:last-of-type {
-    margin-left: auto;
-  }
 }
 
 .link {
   position: relative;
   display: block;
-  padding: 0.5rem 0;
-  color: var(--color-primary);
-  font-size: 0.9em;
-  font-weight: 700;
+  padding: 0.4rem 0;
+  color: var(--color-text);
+  font-size: 0.86em;
+  font-weight: 600;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 0.2s ease;
 
   &:after {
     content: '';
     position: absolute;
     bottom: 0;
+    left: 0;
     display: block;
     height: 2px;
     width: 0;
@@ -56,6 +71,8 @@
 
   &:hover,
   &:focus {
+    color: var(--color-primary);
+
     &:after {
       width: 100%;
     }
@@ -82,7 +99,7 @@
     height: 1.25rem;
 
     path {
-      fill: var(--color-primary);
+      fill: var(--color-text);
     }
   }
 
@@ -93,18 +110,11 @@
 
 @media screen and (min-width: 768px) {
   .nav {
-    padding: 3rem;
+    padding: 1.5rem 3rem;
   }
 
   .list {
-    gap: 3rem;
-    justify-content: flex-end;
-  }
-
-  .item {
-    &:last-of-type {
-      margin-left: unset;
-    }
+    gap: 2.5rem;
   }
 
   .link {
@@ -112,9 +122,12 @@
   }
 }
 
-@media screen and (min-width: 992px) {
-  .nav {
-    top: 3rem;
-    right: 3rem;
+@media (max-width: 560px) {
+  .list {
+    gap: 1rem;
+  }
+
+  .nav .link {
+    display: none;
   }
 }

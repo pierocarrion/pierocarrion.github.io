@@ -1,10 +1,22 @@
 .theme {
   font-family: 'Raleway', sans-serif;
-  padding-bottom: 3rem;
-  background: var(--color-background);
-  will-change: background;
-  transition: 0.2s ease;
+  background: transparent;
   min-height: 100vh;
+  position: relative;
+}
+
+.theme::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(
+      ellipse at top,
+      var(--color-bg-glow),
+      var(--color-background) 60%
+    ),
+    var(--color-background);
+  transition: background 0.3s ease;
 }
 
 @media screen and (min-width: 768px) {

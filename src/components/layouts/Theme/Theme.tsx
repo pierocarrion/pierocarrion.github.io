@@ -1,5 +1,4 @@
 import { FC, ReactNode, useEffect, useMemo, useState } from 'react'
-import { logger } from 'src/logs'
 import { ThemeContext, TOKENS_DARK, TOKENS_LIGHT } from './Theme.context'
 
 type TThemeProps = {
@@ -17,9 +16,6 @@ export const Theme: FC<TThemeProps> = ({ children }) => {
       : TOKENS_LIGHT
 
     setTheme(prefersColorScheme)
-    logger.track('prefers-color-theme', {
-      theme: prefersColorScheme,
-    })
   }, [])
 
   return (

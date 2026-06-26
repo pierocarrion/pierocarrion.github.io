@@ -1,5 +1,4 @@
 import { FC, HTMLAttributes, useContext } from 'react'
-import { logger } from 'src/logs'
 import { ThemeContext, TOKENS_DARK, TOKENS_LIGHT } from './Theme.context'
 
 export const ThemeSwitcher: FC<HTMLAttributes<HTMLButtonElement>> = ({
@@ -9,9 +8,6 @@ export const ThemeSwitcher: FC<HTMLAttributes<HTMLButtonElement>> = ({
 
   const handleChangeTheme = (color: string) => {
     setTheme(color)
-    logger.track('changed-theme', {
-      theme: color,
-    })
   }
 
   if (theme === TOKENS_LIGHT)

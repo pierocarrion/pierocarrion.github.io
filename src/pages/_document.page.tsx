@@ -17,8 +17,18 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="icon" href="/favicon.svg" />
+          <meta
+            name="google-site-verification"
+            content="LoTz9Ohv5iFic5iGWVbuRC7_A1eYcbMu8xFs-ZsKVps"
+          />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap"
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin=""
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
             rel="stylesheet"
           />
         </Head>

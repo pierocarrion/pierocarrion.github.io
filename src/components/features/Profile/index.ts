@@ -1,2 +1,5 @@
 export * from './Profile'
-export * from './Profile.types'
+export * from './portfolio'
+export * from './Projects'
+export * from './Packages'
+export * from './Hackathons'
