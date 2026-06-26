@@ -1,6 +1,8 @@
 module.exports = {
+  output: 'export',
   images: {
     formats: ['image/webp'],
+    unoptimized: true,
     domains: ['avatars.githubusercontent.com', 'localhost'],
   },
   pageExtensions: ['page.tsx', 'api.ts'],

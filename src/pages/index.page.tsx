@@ -32,7 +32,6 @@ export const HomePage: FC<THomeProps> = ({ projects }) => {
           property="og:description"
           content=".NET, Flutter & web developer. NuGet and pub.dev packages, hackathons and open source."
         />
-        <meta property="og:image" content="/og.png" />
         <meta property="og:type" content="website" />
         <meta name="theme-color" content="#0a0a0f" />
       </Head>
@@ -83,9 +82,8 @@ export const getStaticProps: GetStaticProps = async () => {
 
     return {
       props: { projects: projects.length ? projects : empty },
-      revalidate: 10080,
     }
   } catch {
-    return { props: { projects: empty }, revalidate: 10080 }
+    return { props: { projects: empty } }
   }
 }
