@@ -54,77 +54,61 @@ export const portfolio: TPortfolio = {
         label: 'LinkedIn',
         href: 'https://www.linkedin.com/in/pierocarrion/',
       },
-      { label: 'NuGet', href: 'https://www.nuget.org/profiles/pierocarrion' },
-      { label: 'pub.dev', href: 'https://pub.dev/publishers/pierocarrion.dev' },
+      {
+        label: 'NuGet',
+        href: 'https://www.nuget.org/packages/SurrealDb.Net.Linq/',
+      },
+      { label: 'pub.dev', href: 'https://pub.dev/packages/build_slim' },
     ],
   },
   nuget: [
     {
-      name: 'FluentCMS',
+      name: 'SurrealDb.Net.Linq',
       description:
-        'Lightweight, extensible content management built on .NET for modern web apps.',
-      url: 'https://www.nuget.org/packages/FluentCMS',
-      meta: '.NET · C#',
-    },
-    {
-      name: 'ReactCMS',
-      description:
-        'Headless CMS with a React-friendly API surface and built-in auth.',
-      url: 'https://www.nuget.org/packages/ReactCMS',
-      meta: '.NET · REST',
-    },
-    {
-      name: 'RepoDB.SQLite',
-      description:
-        'A lightweight ORM data provider for SQLite built on top of RepoDB.',
-      url: 'https://www.nuget.org/packages/RepoDB.SQLite',
-      meta: '.NET · ORM',
+        'LINQ provider for SurrealDB on .NET — query SurrealDB with strongly-typed, composable LINQ expressions.',
+      url: 'https://www.nuget.org/packages/SurrealDb.Net.Linq/',
+      meta: '.NET · C# · v1.0.0',
     },
   ],
   pubdev: [
     {
-      name: 'clean_logger',
+      name: 'build_slim',
       description:
-        'A beautiful, zero-dependency logging utility for Flutter apps with pretty console output.',
-      url: 'https://pub.dev/packages/clean_logger',
-      meta: 'Flutter · Dart',
-    },
-    {
-      name: 'clean_network',
-      description:
-        'A declarative HTTP client wrapper around Dio with interceptors, retries and parsing.',
-      url: 'https://pub.dev/packages/clean_network',
-      meta: 'Flutter · Dio',
-    },
-    {
-      name: 'clean_repo',
-      description:
-        'A generic repository pattern abstraction for clean architecture Flutter projects.',
-      url: 'https://pub.dev/packages/clean_repo',
-      meta: 'Flutter · Architecture',
+        'CLI tool and library to analyze and reduce the size of Flutter APK, AAB, and IPA build artifacts using best-practice optimizations.',
+      url: 'https://pub.dev/packages/build_slim',
+      meta: 'Flutter · Dart · v0.4.0',
     },
   ],
   hackathons: [
     {
-      name: 'NASA Space Apps Challenge',
-      result: 'Global Nominee',
+      name: 'VisualSprint Agent',
+      result: 'Project',
       description:
-        'Built an open-data visualization platform for satellite imagery analysis.',
-      year: '2022',
-      url: 'https://www.spaceappschallenge.org/',
+        'Multimodal AI meeting agent that understands audio and screen context to generate evidence-backed decisions, commitments, blockers, and cross-meeting memory.',
+      year: '2024',
+      url: 'https://github.com/VisualSprint-Labs/visualsprint-agent',
     },
     {
-      name: 'Hackathon UNI',
-      result: '1st Place',
+      name: 'AlphaLead AI',
+      result: 'Project',
       description:
-        'Real-time logistics optimization engine using graph algorithms.',
-      year: '2021',
+        'AI-driven lead intelligence platform built with TypeScript.',
+      year: '2024',
+      url: 'https://github.com/pierocarrion/alphalead-ai',
     },
     {
-      name: 'Backend Challenge',
-      result: 'Top 3',
-      description: 'High-throughput distributed API with .NET and Kubernetes.',
+      name: 'ZeroQ',
+      result: 'Project',
+      description: 'Zero friction. Zero hardware. Zero quantum risk.',
+      year: '2024',
+      url: 'https://github.com/pierocarrion/ZeroQ',
+    },
+    {
+      name: 'ProbT',
+      result: 'Project',
+      description: 'Probabilistic computing experiments and tooling.',
       year: '2023',
+      url: 'https://github.com/pierocarrion/ProbT',
     },
   ],
 }
